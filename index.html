@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sales Manager DACH-Region – INTILION AG · Martin Kiessling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aptos:opsz,wght@14..24,400;14..24,600;14..24,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blau-hell:#e6f4ff;--blau-mittel:#4aa3df;--blau-dunkel:#004f7a;
+  --text:#002b3a;--accent:#ffb400;--bg:linear-gradient(180deg,var(--blau-hell),#fff);
+  --muted:#5f7b9a
+}
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:Aptos, "Segoe UI", Calibri, system-ui, sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:var(--blau-dunkel);color:#fff;padding:18px 12px}
+.header-wrap{max-width:1100px;margin:auto;display:flex;gap:14px;align-items:center}
+.photo{width:86px;height:86px;object-fit:cover;border-radius:50%;border:2px solid #fff}
+.title{flex:1}
+.title h1{margin:.2rem 0 .1rem;font-size:1.35rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.title p{margin:0;opacity:.95}
+.logo-inline{height:44px;width:auto;vertical-align:middle}
+nav{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;background:var(--blau-mittel);padding:6px}
+nav button{background:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:600}
+nav button:hover,nav button.active{background:#ffcc00}
+main{max-width:1100px;margin:auto;padding:16px}
+section{display:none;animation:fade .35s ease}
+section.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.grid{display:grid;gap:16px}.grid-2{grid-template-columns:1.2fr .8fr}
+@media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:16px}
+.h3{margin:.2rem 0 .4rem;font-size:1.15rem}
+.kicker{font-size:.95rem;color:var(--muted);margin:.2rem 0 .6rem}
+.small{font-size:.93rem;color:#264a63}
+.sep{border:0;border-top:1px solid #e4eef7;margin:10px 0}
+ul.list-tight{margin:0;padding-left:18px}
+ul.list-tight li{margin:.35rem 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:#fff;border:1px solid var(--blau-mittel);color:var(--text);padding:6px 10px;border-radius:999px;font-size:.9rem;white-space:nowrap}
+.badge{display:inline-block;font-size:.78rem;background:#eaf5ff;color:#0a3f5e;border:1px solid #b8dcfb;border-radius:999px;padding:3px 8px}
+.note{background:#f5fbff;border:1px solid #d6ecff;color:#093c5b;border-radius:8px;padding:10px}
+blockquote{margin:.6rem 0;padding:.6rem .8rem;border-left:4px solid var(--blau-mittel);background:#f5fbff;border-radius:8px}
+.cta{display:inline-block;background:var(--blau-mittel);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
+footer{background:var(--blau-dunkel);color:#fff;text-align:center;padding:10px;font-size:.9rem;margin-top:22px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+#zielgruppen h3{margin:.2rem 0;color:#004f7a}
+.hero{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.avatar{width:120px;height:120px;border-radius:50%;overflow:hidden;border:3px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.profilfoto{width:100%;height:100%;object-fit:cover}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrap">
+    <img src="Martin-Kiessling.png" alt="Martin Kiessling" class="photo">
+    <div class="title">
+      <h1>Sales Manager DACH-Region – INTILION AG
+        <img src="logo.jpg" alt="INTILION AG Logo" class="logo-inline">
+      </h1>
+      <p>Martin Kiessling · Vertrieb · Remote/Hybrid · DACH/EU</p>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <button class="active" onclick="showSection('start')">Start</button>
+  <button onclick="showSection('unternehmen')">Unternehmen</button>
+  <button onclick="showSection('rolle')">Rolle & Fokus</button>
+  <button onclick="showSection('ansatz')">Mein Vertriebsansatz</button>
+  <button onclick="showSection('analysen')">Analysen</button>
+  <button onclick="showSection('about')">Über mich</button>
+  <button onclick="showSection('kontakt')">Schlusswort / Kontakt</button>
+</nav>
+
+<main>
+
+<section id="start" class="active">
+  <div class="card">
+    <div class="hero">
+      <div class="avatar">
+        <img src="Martin-Kiessling.png" alt="Martin Kiessling" class="profilfoto">
+      </div>
+      <div>
+        <h2>Willkommen – kurze Einordnung</h2>
+        <p class="kicker">„Erst verstehen, dann liefern.“</p>
+        <p>Für mich ist besonders wichtig, <strong>zu verstehen, was Sie genau suchen und brauchen</strong>. Danach besprechen wir gemeinsam, wie ich das umsetzen kann und welche Maßnahmen sinnvoll sind.</p>
+        <p class="small">Diese Seite bündelt Unternehmenssicht, Rollenfokus, meinen Vertriebsansatz sowie Links zu Analysen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="unternehmen">
+  <div class="grid grid-2">
+    <div class="card">
+      <h2>INTILION AG – Kurzüberblick</h2>
+      <p class="kicker">Spezialist für stationäre Energiespeicherlösungen</p>
+      <ul class="list-tight">
+        <li><strong>Website:</strong> <a href="https://intilion.com/" target="_blank" rel="noopener">https://intilion.com/</a></li>
+        <li><strong>Standorte / Remote:</strong> Paderborn · Remote möglich</li>
+        <li><strong>Geschäftsmodell:</strong> Entwicklung und Vertrieb von Lithium-Ionen-basierten Energiespeicherlösungen für Gewerbe, Industrie und Netzinfrastruktur</li>
+        <li><strong>Zielgruppen:</strong> Energieversorger, Stadtwerke, Versorger, Endkunden im Bereich erneuerbare Energien</li>
+        <li><strong>Gehaltsrahmen:</strong> 48.000 €</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="h3">Kommerzielle Einordnung</h3>
+      <ul class="list-tight">
+        <li><strong>Werttreiber:</strong> Energiewende, CO₂-Reduktion, Versorgungssicherheit, E-Mobilität</li>
+        <li><strong>Differenzierung:</strong> Hohe Qualitätsstandards, 95 Jahre Erfahrung aus der Muttergesellschaft, flexible Speicherlösungen</li>
+        <li><strong>Sales-Chancen:</strong> Ausbau DACH-Markt, Stadtwerke-Netzwerk, neue Industriekunden</li>
+        <li><strong>Risiken:</strong> Wettbewerb durch internationale Anbieter, regulatorische Änderungen</li>
+      </ul>
+      <div class="note small">Im Gespräch möchte ich konkret verstehen: Marktsegmente, Kennzahlen im Verkaufsprozess, Gründe für Kauf/Nichtkauf, Onboarding & Referenzenutzung.</div>
+    </div>
+  </div>
+</section>
+
+<section id="rolle">
+  <div class="card">
+    <h2>Rolle & Fokus</h2>
+    <span class="badge">Vertriebsausbau</span>
+    <span class="badge">Energiespeicher</span>
+    <span class="badge">DACH-Region</span>
+    <p class="kicker">„Wiederholbar, messbar, skalierbar.“</p>
+    <ul class="list-tight">
+      <li><strong>Full-Cycle:</strong> Zielkunden definieren → Erstansprache → Bedarf klären → Angebot → Abschluss</li>
+      <li><strong>Pipeline-Disziplin:</strong> klare Stages, messbare Conversions, regelmäßige Forecasts</li>
+      <li><strong>Demos & Storylines:</strong> Nutzen je Zielgruppe – kurz, relevant, verbindlich</li>
+      <li><strong>Angebote/Ausschreibungen:</strong> federführend inkl. Antwortbausteinen</li>
+      <li><strong>Übergabe:</strong> sauberer Handshake an Delivery/CS, schneller Nutzen & Adoption</li>
+    </ul>
+    <p class="small">Starttermin (präferiert): 01.10.2025.</p>
+  </div>
+</section>
+
+<section id="ansatz">
+  <div class="grid grid-2">
+    <div class="card">
+      <h2>Mein Vertriebsansatz</h2>
+      <p class="kicker">Hands-on. Datengeführt. Menschlich.</p>
+      <ul class="list-tight">
+        <li><strong>Erst verstehen, dann anbieten:</strong> Problem, Kontext, Wirkung – erst dann Angebot</li>
+        <li><strong>Value-Selling:</strong> klarer Business Case</li>
+        <li><strong>Gemeinsamer Aktionsplan:</strong> Timeline, Meilensteine, Verantwortliche</li>
+        <li><strong>Transparenz:</strong> kurze Recaps, klare To-dos</li>
+        <li><strong>Iterativ besser:</strong> Best Practices im Team teilen</li>
+      </ul>
+      <blockquote>Kompletter Vertriebsprozess von A bis Z – von Zielgruppe bis Vertragsabschluss.</blockquote>
+    </div>
+    <div class="card">
+      <h3 class="h3">Was Sie erwarten dürfen</h3>
+      <div class="chips">
+        <span class="chip">Remote-Disziplin</span><span class="chip">Abschlussstärke</span>
+        <span class="chip">Klare Forecasts</span><span class="chip">Strukturiertes CRM</span>
+        <span class="chip">Storytelling</span><span class="chip">C-Level-fähig</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="analysen">
+  <div class="card">
+    <h2>Analysen & Materialien</h2>
+    <p class="kicker">Platzhalter – wird bei Bedarf ergänzt.</p>
+    <ul class="list-tight">
+      <li><strong>Zielgruppenanalyse</strong> – <a href="zielgruppen.html" target="_blank" rel="noopener">ansehen</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="about">
+  <div class="card">
+    <h2>Über mich</h2>
+    <p class="kicker">Sales Professional · New Business & Account-Aufbau · DACH/EU · >15 Jahre</p>
+    <div class="grid grid-2">
+      <div>
+        <h3 class="h3">Kurzprofil</h3>
+        <p>Vertriebsprofi für erklärungsbedürftige Lösungen – kombiniert <strong>hands-on Akquise</strong>, <strong>Account-Entwicklung</strong> und <strong>Partneraufbau</strong>.</p>
+      </div>
+      <div>
+        <h3 class="h3">Sprachen</h3>
+        <div class="chips">
+          <span class="chip">Deutsch</span><span class="chip">Englisch (C1)</span>
+          <span class="chip">Spanisch (B1)</span><span class="chip">Französisch (A2)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="card">
+    <h2>Schlusswort / Kontaktdaten</h2>
+    <p class="kicker">Ich freue mich auf das Kennenlernen.</p>
+    <blockquote>Vertrieb ist für mich gelebte Praxis – ich überzeuge nicht durch kalte KPIs, sondern indem ich zuhöre,
+        anpacke, vorlebe und so im direkten Miteinander Ergebnisse liefere.</blockquote>
+    <ul class="list-tight">
+      <li><strong>Martin Kiessling</strong> · Nußbaumstraße 3 · 86830 Schwabmünchen</li>
+      <li><a href="mailto:martin.kiessling@outlook.com">martin.kiessling@outlook.com</a> · <a href="tel:+4915201772663">+49 1520 177 2663</a></li>
+      <li><a href="https://www.linkedin.com/in/profmaki" target="_blank" rel="noreferrer">linkedin.com/in/profmaki</a></li>
+    </ul>
+    <table style="margin-top:1rem;border-collapse:collapse;width:100%;font-size:.95rem">
+      <tr>
+        <td style="padding:.4rem;border:1px solid #ccc;background:#f0f8ff;"><strong>Frühester Starttermin</strong></td>
+        <td style="padding:.4rem;border:1px solid #ccc;">01.10.2025</td>
+      </tr>
+      <tr>
+        <td style="padding:.4rem;border:1px solid #ccc;background:#f0f8ff;"><strong>Gehaltswunsch</strong></td>
+        <td style="padding:.4rem;border:1px solid #ccc;">48.000 €</td>
+      </tr>
+    </table>
+    <p style="margin-top:.6rem">
+      <a class="cta" href="mailto:martinkiessling@web.de?subject=Kennenlernen">Termin vorschlagen</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  &copy; <span id="yr"></span> Martin Kiessling – Bewerbung
+</footer>
+
+<script>
+function showSection(id){
+  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('main section').forEach(s=>s.classList.remove('active'));
+  document.querySelector(`button[onclick="showSection('${id}')"]`)?.classList.add('active');
+  document.getElementById(id)?.classList.add('active');
+}
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

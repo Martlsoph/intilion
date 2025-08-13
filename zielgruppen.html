@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Zielgruppen-Analyse – INTILION Sales Manager DACH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aptos:opsz,wght@14..24,400;14..24,600;14..24,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blau-hell:#e6f4ff;--blau-mittel:#4aa3df;--blau-dunkel:#004f7a;
+  --text:#002b3a;--accent:#ffb400;--bg:linear-gradient(180deg,var(--blau-hell),#fff);
+  --muted:#5f7b9a
+}
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:Aptos, "Segoe UI", Calibri, system-ui, sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:var(--blau-dunkel);color:#fff;padding:18px 12px}
+.header-wrap{max-width:1100px;margin:auto;display:flex;gap:14px;align-items:center}
+.photo{width:86px;height:86px;object-fit:cover;border-radius:50%;border:2px solid #fff}
+.title{flex:1}
+.title h1{margin:.2rem 0 .1rem;font-size:1.35rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.title p{margin:0;opacity:.95}
+.logo-inline{height:44px;width:auto;vertical-align:middle}
+nav{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;background:var(--blau-mittel);padding:6px}
+nav button{background:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:600}
+nav button:hover,nav button.active{background:#ffcc00}
+main{max-width:1100px;margin:auto;padding:16px}
+section{display:none;animation:fade .35s ease}
+section.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:16px}
+.h3{margin:.2rem 0 .4rem;font-size:1.15rem}
+.kicker{font-size:.95rem;color:var(--muted);margin:.2rem 0 .6rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:#fff;border:1px solid var(--blau-mittel);color:var(--text);padding:6px 10px;border-radius:999px;font-size:.9rem;white-space:nowrap}
+ul.list-tight{margin:0;padding-left:18px}
+ul.list-tight li{margin:.35rem 0}
+footer{background:var(--blau-dunkel);color:#fff;text-align:center;padding:10px;font-size:.9rem;margin-top:22px}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-wrap">
+    <img src="Martin-Kiessling.png" alt="Martin Kiessling" class="photo">
+    <div class="title">
+      <h1>Zielgruppen-Analyse – INTILION Sales Manager DACH <img src="logo-placeholder.png" alt="INTILION Logo" class="logo-inline"></h1>
+      <p>Martin Kiessling · Vertrieb · Remote/Hybrid · DACH</p>
+    </div>
+  </div>
+</header>
+<nav>
+  <button class="active" onclick="showSection('zielgruppen')">Zielgruppen</button>
+</nav>
+<main>
+<section id="zielgruppen" class="active">
+  <div class="card">
+    <h2>Zielgruppen-Avatare</h2>
+    <p class="kicker">Fünf typische Kundentypen für den Vertrieb von stationären Batteriespeicherlösungen in der DACH-Region.</p>
+  </div>
+  <div class="card">
+    <div class="card-grid">
+      <!-- AVATAR 1 -->
+      <div class="card">
+        <h3>Geschäftsführer Stadtwerke</h3>
+        <p class="kicker">Energieversorger · Kommunal geprägt · 50–500 Mitarbeiter</p>
+        <div class="chips"><span class="chip">Versorgungssicherheit</span><span class="chip">Netzausbau</span><span class="chip">Nachhaltigkeit</span></div>
+        <h4 class="h3">Kurzbeschreibung</h4>
+        <p>Entscheidet über Investitionen in Netzstabilität und erneuerbare Integration.</p>
+        <h4 class="h3">Herausforderungen</h4>
+        <ul class="list-tight">
+          <li>Integration von erneuerbaren Energien ins Netz.</li>
+          <li>Lastspitzenmanagement bei wachsender E-Mobilität.</li>
+          <li>Begrenzte Investitionsbudgets trotz Modernisierungsdruck.</li>
+        </ul>
+        <h4 class="h3">Motivation</h4>
+        <ul class="list-tight">
+          <li>Erhöhung der Netzstabilität.</li>
+          <li>Erfüllung gesetzlicher Klimaziele.</li>
+          <li>Imagegewinn als nachhaltiger Versorger.</li>
+        </ul>
+        <h4 class="h3">Ansprache</h4>
+        <ul class="list-tight">
+          <li>ROI-Berechnungen und Fördermöglichkeiten betonen.</li>
+          <li>Referenzen ähnlicher Stadtwerke.</li>
+          <li>Langfristige Betriebskostenvorteile aufzeigen.</li>
+        </ul>
+        <h4 class="h3">Einstiegsätze</h4>
+        <ul class="list-tight">
+          <li>„Mit unserem System stabilisieren Sie Ihr Netz und vermeiden teure Lastspitzen.“</li>
+          <li>„Fördermittel reduzieren Ihre Investitionskosten deutlich.“</li>
+          <li>„Lassen Sie uns Ihre aktuellen Engpässe gemeinsam durchrechnen.“</li>
+        </ul>
+        <h4 class="h3">Kontaktwege</h4>
+        <ul class="list-tight">
+          <li>Direktanruf beim Geschäftsführer oder Technikleiter.</li>
+          <li>Branchenmessen Energie & Netze.</li>
+          <li>Gute Zeiten: Vormittag 9:00–11:00.</li>
+        </ul>
+      </div>
+      <!-- AVATAR 2 -->
+      <div class="card">
+        <h3>Technischer Leiter Industrie</h3>
+        <p class="kicker">Produktion/Verarbeitung · hoher Energiebedarf</p>
+        <div class="chips"><span class="chip">Eigenverbrauch</span><span class="chip">Produktionssicherheit</span><span class="chip">Kostenreduktion</span></div>
+        <h4 class="h3">Kurzbeschreibung</h4>
+        <p>Optimiert Energiekosten und Versorgungssicherheit im Werk.</p>
+        <h4 class="h3">Herausforderungen</h4>
+        <ul class="list-tight">
+          <li>Steigende Strompreise.</li>
+          <li>Produktionsausfälle durch Spannungsschwankungen.</li>
+          <li>CO₂-Reduktionsziele.</li>
+        </ul>
+        <h4 class="h3">Motivation</h4>
+        <ul class="list-tight">
+          <li>Reduzierte Stromkosten durch Lastverschiebung.</li>
+          <li>Absicherung kritischer Prozesse.</li>
+          <li>Nachhaltige Produktion.</li>
+        </ul>
+        <h4 class="h3">Ansprache</h4>
+        <ul class="list-tight">
+          <li>Kosten-Nutzen-Rechnung mit Amortisationszeit.</li>
+          <li>Technische Zuverlässigkeit betonen.</li>
+          <li>Integration in bestehende Anlagen.</li>
+        </ul>
+        <h4 class="h3">Einstiegsätze</h4>
+        <ul class="list-tight">
+          <li>„Mit Batteriespeichern senken Sie Spitzenlastkosten signifikant.“</li>
+          <li>„Unsere Systeme sind wartungsarm und robust.“</li>
+          <li>„Wir passen die Lösung exakt an Ihre Prozessanforderungen an.“</li>
+        </ul>
+        <h4 class="h3">Kontaktwege</h4>
+        <ul class="list-tight">
+          <li>Direkt per E-Mail mit technischer Kurzinfo.</li>
+          <li>Besuch bei Werksführungen oder Energiemessen.</li>
+          <li>Gute Zeiten: Frühmorgens oder später Nachmittag.</li>
+        </ul>
+      </div>
+      <!-- AVATAR 3 -->
+      <div class="card">
+        <h3>Projektentwickler erneuerbare Energien</h3>
+        <p class="kicker">PV-/Windparks · Speicherintegration</p>
+        <div class="chips"><span class="chip">Projektfinanzierung</span><span class="chip">Speicherintegration</span><span class="chip">Genehmigung</span></div>
+        <h4 class="h3">Kurzbeschreibung</h4>
+        <p>Plant und realisiert Großprojekte mit Speicherbedarf.</p>
+        <h4 class="h3">Herausforderungen</h4>
+        <ul class="list-tight">
+          <li>Optimierung von Ertrag und Netzanschluss.</li>
+          <li>Abstimmung mit Netzbetreibern.</li>
+          <li>Genehmigungsverfahren beschleunigen.</li>
+        </ul>
+        <h4 class="h3">Motivation</h4>
+        <ul class="list-tight">
+          <li>Ertragsmaximierung.</li>
+          <li>Attraktive Finanzierungskonditionen.</li>
+          <li>Schneller Markteintritt.</li>
+        </ul>
+        <h4 class="h3">Ansprache</h4>
+        <ul class="list-tight">
+          <li>Referenzen ähnlicher Projekte vorlegen.</li>
+          <li>Technische Planungssicherheit bieten.</li>
+          <li>Finanzierungsmodelle darstellen.</li>
+        </ul>
+        <h4 class="h3">Einstiegsätze</h4>
+        <ul class="list-tight">
+          <li>„Unsere Speicher steigern den ROI Ihrer Parks signifikant.“</li>
+          <li>„Wir übernehmen die Abstimmung mit dem Netzbetreiber.“</li>
+          <li>„Mit uns verkürzen Sie die Realisierungszeit um Monate.“</li>
+        </ul>
+        <h4 class="h3">Kontaktwege</h4>
+        <ul class="list-tight">
+          <li>Projektmessen, gezielte LinkedIn-Ansprache.</li>
+          <li>Direktbesuch in Planungsbüros.</li>
+          <li>Gute Zeiten: Vormittags 10:00–12:00.</li>
+        </ul>
+      </div>
+      <!-- AVATAR 4 -->
+      <div class="card">
+        <h3>Betreiber E-Mobilitätsinfrastruktur</h3>
+        <p class="kicker">Ladepark-/Fuhrparkbetreiber · hoher Ladebedarf</p>
+        <div class="chips"><span class="chip">Lastmanagement</span><span class="chip">Schnellladen</span><span class="chip">Netzanschluss</span></div>
+        <h4 class="h3">Kurzbeschreibung</h4>
+        <p>Sorgt für schnelle Ladeleistung ohne Netzüberlastung.</p>
+        <h4 class="h3">Herausforderungen</h4>
+        <ul class="list-tight">
+          <li>Hohe Anschlusskosten bei Netzverstärkung.</li>
+          <li>Lastspitzen vermeiden.</li>
+          <li>Zuverlässige Ladeverfügbarkeit sichern.</li>
+        </ul>
+        <h4 class="h3">Motivation</h4>
+        <ul class="list-tight">
+          <li>Kosten senken.</li>
+          <li>Ladegeschwindigkeit sichern.</li>
+          <li>Kundenzufriedenheit steigern.</li>
+        </ul>
+        <h4 class="h3">Ansprache</h4>
+        <ul class="list-tight">
+          <li>Praxisbeispiele erfolgreicher Ladeparks.</li>
+          <li>Investitions- und Betriebskostenvergleich.</li>
+          <li>Skalierbarkeit betonen.</li>
+        </ul>
+        <h4 class="h3">Einstiegsätze</h4>
+        <ul class="list-tight">
+          <li>„Mit Speicherlösungen vermeiden Sie teure Netzausbaukosten.“</li>
+          <li>„Sichern Sie Ladeleistung auch zu Spitzenzeiten.“</li>
+          <li>„Wir dimensionieren exakt nach Ihrem Ladeprofil.“</li>
+        </ul>
+        <h4 class="h3">Kontaktwege</h4>
+        <ul class="list-tight">
+          <li>Besuche bei Ladeinfrastruktur-Messen.</li>
+          <li>Direkte Ansprache technischer Leiter.</li>
+          <li>Gute Zeiten: Später Nachmittag.</li>
+        </ul>
+      </div>
+      <!-- AVATAR 5 -->
+      <div class="card">
+        <h3>Energieberater & EPC</h3>
+        <p class="kicker">Planungs- und Ingenieurbüros · Energiesysteme</p>
+        <div class="chips"><span class="chip">Planungssicherheit</span><span class="chip">Integration</span><span class="chip">Wirtschaftlichkeit</span></div>
+        <h4 class="h3">Kurzbeschreibung</h4>
+        <p>Empfiehlt und plant Speicherlösungen für Kundenprojekte.</p>
+        <h4 class="h3">Herausforderungen</h4>
+        <ul class="list-tight">
+          <li>Technische und wirtschaftliche Machbarkeit nachweisen.</li>
+          <li>Passgenaue Integration in hybride Systeme.</li>
+          <li>Fördermöglichkeiten einbeziehen.</li>
+        </ul>
+        <h4 class="h3">Motivation</h4>
+        <ul class="list-tight">
+          <li>Zufriedene Endkunden.</li>
+          <li>Reibungslose Umsetzung.</li>
+          <li>Langfristige Kooperationen.</li>
+        </ul>
+        <h4 class="h3">Ansprache</h4>
+        <ul class="list-tight">
+          <li>Technische Datenblätter und CAD-Integration bereitstellen.</li>
+          <li>Wirtschaftlichkeitsrechnungen liefern.</li>
+          <li>Service- und Wartungspakete anbieten.</li>
+        </ul>
+        <h4 class="h3">Einstiegsätze</h4>
+        <ul class="list-tight">
+          <li>„Unsere Systeme sind in Ihre Planungssoftware integrierbar.“</li>
+          <li>„Wir unterstützen bei Ausschreibungen und Förderanträgen.“</li>
+          <li>„Gemeinsam steigern wir die Erfolgsquote Ihrer Projekte.“</li>
+        </ul>
+        <h4 class="h3">Kontaktwege</h4>
+        <ul class="list-tight">
+          <li>Fachveranstaltungen, LinkedIn, Direktbesuche.</li>
+          <li>Gute Zeiten: Vormittags 9:00–12:00.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>&copy; <span id="yr"></span> Martin Kiessling – Zielgruppen INTILION</footer>
+<script>
+function showSection(id){
+  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('main section').forEach(s=>s.classList.remove('active'));
+  document.querySelector(`button[onclick="showSection('${id}')"]`)?.classList.add('active');
+  document.getElementById(id)?.classList.add('active');
+}
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
